@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo de Caixas</title>
+  <style>
+    h1{ /* box-level*/
+      background-color: lightgray;
+
+      height: 300px;
+      width: 300px;
+
+      /*
+      ordem do shorthand border
+      border-width: 10px;
+      border-style: solid;
+      border-color: darkslategray;
+      */
+      border: 10px solid darkslategray;
+
+      /*
+      ordem do shorthand padding
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+
+      podendo colocar:
+      1 valor para todos os lados
+      2 valores para vertical e horizontal
+      4 valores para cada lado seguindo sentido horário
+      auto em right e left para centralizar automaticamente
+      */
+      padding: 10px auto 10px auto;
+
+      /*
+      ordem do shorthand margin
+      margin-top: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+
+      podendo colocar:
+      1 valor para todos os lados
+      2 valores para vertical e horizontal
+      4 valores para cada lado seguindo sentido horário
+      auto em right e left para centralizar automaticamente
+      */
+      margin: 10px auto 10px auto;
+
+      /*
+      ordem shorthand outline
+      outline-width: 5px;
+      outline-style: dashed;
+      outline-color: salmon;
+      */
+      outline: 5px dashed salmon;
+    }
+
+    a{ /* inline-level*/
+      display: block; /*transforma de inline-level para box-level. o contrário também é possível*/
+
+      border-width: 10px;
+      border-style: solid;
+      border-color: red;
+    
+    }
+  </style>
+</head>
+<body>
+  <!--User agent é sempre o navegador-->
+  <h1>Exemplo de caixa box-level</h1>
+  <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Testa com Ctrl+Shift+I</p>
+</body>
+</html>

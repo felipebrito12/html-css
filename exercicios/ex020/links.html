@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links Personalizados</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+      color: red;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:visited{
+      color: darkred;
+    }
+
+    a:hover{
+      text-decoration: underline;
+      color: black;
+    }
+
+    a:active{
+      color: yellow;
+    }
+
+    a::before{
+      content: "LINK ";
+      font-weight: normal;
+      color: darkgray;
+      text-decoration: none;
+    }
+
+    a::after{
+      content: " LINK";
+      font-weight: normal;
+      color: darkgray;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Personalizando Links</h1>
+  <ul>
+    <li><a href="https://github.com/FehFelps" target="_blank">Meu perfil Github</a></li>
+    <li><a href="https://www.cursoemvideo.com/">Site do Curso em Vídeo</a></li>
+  </ul>
+</body>
+</html>

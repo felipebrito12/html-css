@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon-html.ico" type="image/x-icon">
+  <title>Tipos de Mídia</title>
+</head>
+<body>
+  <h1>Imagem Dinâmica</h1>
+  <p>Essa é uma imagem que muda de tamanho dependendo do tamanho da tela, tente aumentar ou diminuir o tamanho da janela do seu navegador</p>
+  
+  <picture>
+    <source media="(min-width: 1025px)" srcset="imagens/foto-g.png" type="image/png">
+    <source media="(min-width: 725px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-p.png" alt="Imagem Dinâmica">  
+  </picture>
+
+  <h1>Reproduzindo Áudios</h1>
+  <p>Aprendendo a reproduzir áudios usando &lt;audio&gt; e especificar eles usando &lt;source:src&gt; dentro de &lt;audio&gt;</p>
+
+  <audio src="midias/ドラマツルギー - Eve  MV(MP3_160K).mp3" autoplay controls></audio>
+  <br>
+  <audio preload="metadata" controls loop> <!--O parâmetro preload junto com metadata serve para carregar apenas algumas informações básicas do áudio, não consumindo a internet do usuário para pré carregar o arquivo enquanto abre o site-->
+    <source src="midias/美波「カワキヲアメク」MV(MP3_160K).mp3" type="audio/mpeg"> <!--É possível carregar diversos formatos de áudio assim como os diferentes tamanhos de imagem para garanti compatibilidade com o navegador-->
+    <p>O seu navegador não é compatível com o formato <a href="midias/美波「カワキヲアメク」MV(MP3_160K).mp3">áudio</a></p>
+  </audio>
+</body>
+</html>

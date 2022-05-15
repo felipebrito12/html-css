@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-r">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon-html.ico" type="image/x-icon">
+  <title>Formatação de Textos</title>
+  <style>
+    mark{
+      background-color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <h1>Principais formatações</h1>
+  <p>Nessa frase eu usei o atalho (Ctrl + Shift + P) pra colocar a tag de parágrafo (p)</p>
+  <p>Agora vem as frases em negrito e itálico com e sem semântica</p>  
+
+  <h2>Negrito</h2>
+  <p>Essa é uma frase com um <b>termo em negrito</b> usando a tag B (Negrito não semântico)</p>
+  <p>Essa é uma frase com um <strong>termo em negrito</strong> usando a tag STRONG (Negrito com semântica)</p>
+
+  <h2>Destaque/Itálico</h2>
+  <p>Frase com <i>termo em itálico</i> usando a tag I (Itálico não semântico)</p>
+  <p>Frase com <em>termo em itálico</em> usando a tag EM (Itálico com semântica)</p>
+  <!--Por enquanto usa STRONG e EM como preferência por serem as tags mais atuais do HTML5-->
+
+  <h2>Textos marcados (marca textos)</h2>
+  <p>Frase com <mark style="background-color: yellow;">texto marcado</mark> usando a tag MARK</p>
+  <p>Por padrão a tag mark é amarelo como um marca texto real, mas é possível alterar as cores usando o CSS (style) <mark>para ter um texto marcado de cor diferente</mark></p>
+
+  <h2>Texto grandes e pequeno</h2>
+  <p>Essa é uma frase com <big>texto grande</big> usando a tag BIG (não semântica e obsoleto)</p>
+  <p>Essa é uma frase com <small>texto pequeno</small> usando a tag SMALL (tag semântica e ainda atual) </p>
+
+  <h2>Texto deletado</h2>
+  <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas desconsiderado, usando a tag DEL</p>
+
+  <h2>Texto inserido</h2>
+  <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois usando a tag INS (Como o sublinhado mas com semântica)</p>
+  <p>Podemos marcar <u>um texto como sublinhado</u> usando a tag U (Também sublinhado mas não possui semântica)</p>
+
+  <h2>Texto sobrescrito</h2>
+  <p>Usando a tag SUP podemos conseguir textos menores acima das palavras como em x<sup>20</sup>+3 </p>
+
+  <h2>Texto subescrito</h2>
+  <p>Usando a tag SUB podemos escrever textos menos abaixo das palavras como em H<sub>2</sub>O </p>
+
+</body>
+</html>

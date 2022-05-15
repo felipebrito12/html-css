@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon-html.ico" type="image/x-icon">
+  <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando Links externos</h1>
+    <p>Você pode acessar o <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público do professor Guanabara no GitHub</a></p> <!--target="_blank" serve para abrir o link em outra aba do navegador ao invés de sobrepor o site. rel+"external" serve para dizer que o link é externo-->
+    <p>Você também pode acessar o <a href="https://youtube.com/cursoemvideo"> canal do youtube do professor</a></p>
+    <p>O link do GitHub não vai sobrepor esse site, mas o do Youtube sim</p>
+    <p>Estou aprendendo html porque a <a href="https://www.hostnet.com" target="_blank" rel="nofollow">HostNet</a> patrocinou o curso do Guanabara</p>
+    <p>Esse link da host net usa o rel="nofollow" pra evitar associação de busca</p>
+
+    <h1>Links Internos</h1>
+    <p>Você também pode acessar a <a href="pag002.html" target="_self" rel="next">segunda página</a> desse site</p>
+    <p>Ou então acessar a <a href="noticias/pag003.html">terceira página</a></p>
+
+    <h1>Links de download</h1>
+    <p>
+      <a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Livro em pdf</a>
+    </p>
+    <p>
+      <a href="livro/meulivro.rar" download="meulivro.rar" type="application/vnd.rar">Livro compactado</a>
+    </p>
+
+    <p>Lembre de verificar o tipo de arquivo no site da <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">Iana</a> para então colocar no parâmetro "type"</p>
+
+</body>
+</html>

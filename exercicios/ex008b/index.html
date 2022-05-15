@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon-html.ico" type="image/x-icon">
+  <title>Outras formatações</title>
+</head>
+<body>
+  <h1>Outras formatações</h1>
+  <h2>Código fonte</h2>
+  <p>o comando <code>document.getElementaryById('teste')</code> é escrito em linguagem JavaSript (Mudança no código fonte com a tag CODE)</p>
+  <pre>
+    <code>
+      num = int(input('digite um valor'))
+      if num % 2 == 0:
+        print('O número {num} é PAR')
+      else:
+        print(f'o número {num} é ÍMPAR')
+      print ('Fim do programa')
+    </code>
+  </pre>
+  <p>É possível manter a tabulação do código usando a tag PRE</p>
+  <p>Caso contrário todo o código fica na mesma linha desse jeito:</p>
+  <code>
+    num = int(input('digite um valor'))
+    if num % 2 == 0:
+      print('O número {num} é PAR')
+    else:
+      print(f'o número {num} é ÍMPAR')
+    print ('Fim do programa')
+  </code>
+
+  <h2>Citações simples</h2>
+  <p>Como diria o pai do amigo do professor: <q>O computador é um burro muito rápido</q></p>
+  <p>A tag Q siginica quote, é uma citação, adicionando aspas na frase (a tag Q é semântica, ou seja, ela dá um siginicado a mais nas aspas, deixando de ser apenas forma) </p>
+
+  <h2>Citações completas</h2>
+  <p>Segundo Carol S. Dweck, em seu livro Mindset: A Nova psicologia do sucesso:</p>
+  <blockquote>
+    Que sabiam elas? Sabiam que as qualidade humanas, tais como as habilidades intelectuais, podem ser cultivadas por meio do esforço. E era isso que estavam fazendo - tornando-se mais inteligentes. Não apenas o fracasso não as desestimulavam, como nem sequer imaginavam que estivessem fracassando. Achavam que estavam aprendendo.
+  </blockquote>
+  <p>A tag BLOCKQUOTE serve para criar um espaço no site para uma citação longa</p>
+  <p>Caso haja um link para a citação é possível coloca-lo adcionando CITE= logo após a primeita marca de BLOCKQUOTE</p>
+
+  <h2>Abreviações</h2>
+  <p>Estou desenvolvendo isso em <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+  <p>Se passar o mouse em cima das palavras "HTML" e "CSS" irá aparecer o signicado de cada um. Isso é possível com a tag ABBR</p>
+
+  <h2>Texto Invertido (tag mais inútil)</h2>
+  <p>Aqui temos um texto invertido:</p>
+  <p><bdo dir="rtl">Exemplo de texto invertido</bdo></p>
+  <p>É possível com a tag BDO e escolhendo RTL (Right to Left)</p>
+
+</body>
+</html>

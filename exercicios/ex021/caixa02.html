@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grouping tags</title>
+  <style>
+    body{
+      background-color: #2A8C82;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0px;
+    }
+
+    header{
+      background-color: white;
+      padding: 5px;
+      margin: 10px;
+      border-radius: 10px 20px;
+      box-shadow: 5px 2px 9px rgba(0, 0, 0, 0.342);
+    }
+
+    nav{
+      background-color: #2A8C82;
+      padding: 3px;
+      box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.696);
+      border-radius: 10px 40px;
+    }
+
+    nav > a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    main{
+      background-color: white;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px 40px;
+      box-shadow: 5px 2px 9px rgba(0, 0, 0, 0.342);
+    }
+
+    section#jogos{
+      background-color: rgb(204, 204, 204);
+      padding: 10px;
+      margin: 10px;
+    }
+
+    article > aside{
+      background-color: #818181;
+      color: white;
+    }
+
+    footer{
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 3px;
+      margin: 0px;
+    }
+
+    footer >p{
+      margin: 0px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nome do Site</h1>
+    <nav>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+    </nav>
+  </header>
+  <main>
+    <section id="jogos">
+      <h2>Jogos indie da semana</h2>
+      <article>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, quidem perferendis! Veritatis, unde ullam? Quasi veniam recusandae quae quibusdam nam atque ea laboriosam ut dolorum. Sit recusandae at delectus pariatur.</p>
+        <aside>Escrito por Sr Monocle </aside>
+      </article>
+    </section>
+
+    <section id="rpg"></section>
+  </main>
+  <footer>
+    <p>Desenvolvido por Felps</p>
+  </footer>
+</body>
+</html>
