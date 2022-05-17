@@ -132,6 +132,8 @@ Grouping Tags
   <header> cabeçalho
   <footer> rodapé
   <main> conteúdo principal
+
+<button> Cria um botão 
 ______________________________________________________________
 
 <style> Serve para criar estilos em CSS
