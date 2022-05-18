@@ -94,6 +94,8 @@ ______________________________________________________________
       rel="prev" página anterior do site
       rel="external" link não faz parte do site
       rel="nofollow" o site do link não teve criar relações com o site que o referencia
+    
+    <title> diz o nome da página quando mantém o mouse por cima do link
 
   <download> e <type>  
     <download> serve para indicar que arquivo deve ser baixado (precisa ser o mesmo marcado no <href> da tag <a>)
@@ -208,3 +210,11 @@ Modelo de Caixas
       outline-style: dashed;
       outline-color: salmon;
         outline: 5px dashed salmon;
+
+:root serve para criar coisas na raiz do código de css
+
+* usado para criar regras globais de todo o código html
+
+box-sizing: serve para mudar o padrão das caixas
+  content-box tamanho da caixa vai manter o tamanho do conteúdo
+  border-box vai manter o tamanho da caixa independente de margin ou padding, o tamanho do conteúdo diminui
