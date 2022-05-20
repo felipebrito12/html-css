@@ -55,6 +55,8 @@ ______________________________________________________________
 
 <addres> infomações adicionais de contato
 
+<mark> destaque como marca texto (background amarelo)
+
 ______________________________________________________________
 
 <code> serve para mudar o código fonte do texto e deixar monoespaçado
@@ -151,7 +153,7 @@ ______________________________________________________________
 background-attachment: fixed; 
   usado para o gradiente seguir na tela inteira mesmo depois do scroll
 
-@font-face para usar fontes externas
+"@font-face" para usar fontes externas
       font-family: "Love" ;
       src: url("fonts/love\ larry\ ttf.ttf") format("truetype");
       font-weight: normal;
@@ -218,3 +220,17 @@ Modelo de Caixas
 box-sizing: serve para mudar o padrão das caixas
   content-box tamanho da caixa vai manter o tamanho do conteúdo
   border-box vai manter o tamanho da caixa independente de margin ou padding, o tamanho do conteúdo diminui
+
+<a>
+  text-decoration: 
+  none pra tirar
+  overline pra linha acima do texto
+  underline para linha abaixo do texto
+
+text-transform
+  uppercase para todos maiúsculos
+  lowercase para tudo minúsculo
+
+letter-spacing: px espaçamento entre as letras
+word-spacing: px espasçamento entre as palavras
+line-height: altura de cada linha, distância entre elas
