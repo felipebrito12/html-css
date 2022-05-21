@@ -138,6 +138,14 @@ Grouping Tags
   <main> conteúdo principal
 
 <button> Cria um botão 
+
+<table> cria uma área de tabela
+  <thead> cabeçalho da tabela, primeira linha com título e marcações de cada coluna
+  <tbody> corpo da tabela, são os itens da tabela em si
+  <tr> cria uma linha para a tabela
+    <td> cria a coluna dentro da linha
+  <border> borda da tabela, normalmente se coloca em 0 ou não coloca para definir isso apenas com o CSS
+  
 ______________________________________________________________
 
 <style> Serve para criar estilos em CSS
