@@ -147,13 +147,49 @@ Grouping Tags
     <td> cria a coluna dentro da linha
   <border> borda da tabela, normalmente se coloca em 0 ou não coloca para definir isso apenas com o CSS
 
+______________________________________________________________
+
 <form> serve para criar uma área de formulário 
   <action> pode colocar uma página que deve seguir após responder e enviar o formulário
   <method 
     GET - O resultado do fomulário aparece no link
     POST - O resultado fica oculto no site
   >
-  
+<input
+  Type="" name="">
+    Types de input
+      <text> serve para textos
+      <password> para senhas, muda os caracteres para asteriscos para serem visualmente secretos
+      <email> permite apenas email, não funciona sem um @ com endereço de email funcional
+      <radio> funciona para seleção de opções mas é necessário que haja mais de um e que o name deles sejam os mesmo para que possa haver apenas uma seleção como no exemplo a seguir
+        <input type="radio" name="mes"> Janeiro
+        <input type="radio" name="mes"> Fevereiro
+      <checkbox> cria um check box
+      <submit> serve pra o envio do formulário
+      <color> para selecionar uma cor
+      <date> seleciona uma data
+      <datatime-local> seleciona data e hora
+      <month> seleciona um mês
+      <range> cria uma linha para selecionar a medida
+      <number> aceita apenas números
+      <search> não sei pra que serve na verdade mas acho que tem a ver com semântica e criar um box essencialmente para fazer pesquisas dentro do site
+      <tel> número de celular, acho que também é semântico já que nada é formatado
+      <time> seleciona a hora
+      <url> aceita apenas url
+      <week> seleciona a número da semana do ano
+
+<select name=""> cria uma área de seleção de escolhas dadas pelo desenvolvedor
+  cada opção é feita com a tag:
+  <option> option tem alguns parâmetros
+    <value=""> serve para dizer que valor ele vai retornar e que pode ou não aparecer na url depois do envio do formulário
+    <selected> serve para determinar qual das opções vem selecionada por padrão, caso não seja definido a primeira option sempre é o padrão
+    <multiple> faz com que a seleção vire de multipla escolha mas antes deve haver outra tag para dizer quantas opções podem ser escolhidas. tag a seguir
+    <size> diz a quantidade de opções que podem ser escolhidas juntas
+
+<texarea name=""> serve para criar uma área de texto maior que o normal, podendo ser redimensionada pelo próprio usuário, mas acho que tem como mudar isso com as CSS
+
+<button> serve para criar um botão novo, dentro da tag <form> ela vai enviar o formulário, mas diferente do <input type="submit"> ela é programável e pode ser usada em outras áreas do código além do <form>
+
 ______________________________________________________________
 
 <background-image>: linear-gradient(135deg , purple, yellow);
