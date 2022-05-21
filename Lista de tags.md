@@ -102,6 +102,7 @@ ______________________________________________________________
   <download> e <type>  
     <download> serve para indicar que arquivo deve ser baixado (precisa ser o mesmo marcado no <href> da tag <a>)
     <type> serve para indicar qual o tipo de arquivo que está sendo baixado. Cada tipo de arquivo pode ser verificado no site https://www.iana.org/assignments/media-types/media-types.xhtml
+
   <href> usando # no link ele vai direto para a parte da página marcada
     <a href="#parte3"> 
     <p id="parte1">
@@ -145,15 +146,15 @@ Grouping Tags
   <tr> cria uma linha para a tabela
     <td> cria a coluna dentro da linha
   <border> borda da tabela, normalmente se coloca em 0 ou não coloca para definir isso apenas com o CSS
+
+<form> serve para criar uma área de formulário 
+  <action> pode colocar uma página que deve seguir após responder e enviar o formulário
+  <method 
+    GET - O resultado do fomulário aparece no link
+    POST - O resultado fica oculto no site
+  >
   
 ______________________________________________________________
-
-<style> Serve para criar estilos em CSS
-  podendo ser: 
-    - inline mudando o estilo apenas dentro do parâmetro escolhido
-    - Local/Interno quando se cria uma aba de <style> dentro do <head> do HTML
-    - Externo quando se cria uma página isolada fora do HTML para se criar os estilos, associando ela na head do HTML usando link:css
-      - quando usar css externo devemos usar @charset "UTF-8"; para conseguir usar acentuação 
 
 <background-image>: linear-gradient(135deg , purple, yellow);
   degradê de fundo do site
@@ -183,13 +184,13 @@ background-attachment: fixed;
 Modelo de Caixas
   box-level
     
-    ordem do shorthand border
+    ordem do shorthand <border>
       border-width: 10px;
       border-style: solid;
       border-color: darkslategray;
         border: 10px solid darkslategray;
 
-    ordem do shorthand padding
+    ordem do shorthand <padding>
       padding-top: 10px;
       padding-right: 10px;
       padding-bottom: 10px;
@@ -202,7 +203,7 @@ Modelo de Caixas
       auto em right e left para centralizar automaticamente
         padding: 10px auto 10px auto;
 
-    ordem do shorthand margin
+    ordem do shorthand <margin>
       margin-top: 10px;
       margin-right: 10px;
       margin-bottom: 10px;
@@ -215,7 +216,7 @@ Modelo de Caixas
       auto em right e left para centralizar automaticamente
         margin: 10px auto 10px auto;
 
-    ordem shorthand outline
+    ordem shorthand <outline>
       outline-width: 5px;
       outline-style: dashed;
       outline-color: salmon;
@@ -225,20 +226,20 @@ Modelo de Caixas
 
 * usado para criar regras globais de todo o código html
 
-box-sizing: serve para mudar o padrão das caixas
+<box-sizing>: serve para mudar o padrão das caixas
   content-box tamanho da caixa vai manter o tamanho do conteúdo
   border-box vai manter o tamanho da caixa independente de margin ou padding, o tamanho do conteúdo diminui
 
 <a>
-  text-decoration: 
+  <text-decoration
   none pra tirar
   overline pra linha acima do texto
-  underline para linha abaixo do texto
+  underline para linha abaixo do texto>
 
-text-transform
+  <text-transform
   uppercase para todos maiúsculos
-  lowercase para tudo minúsculo
+  lowercase para tudo minúsculo>
 
-letter-spacing: px espaçamento entre as letras
-word-spacing: px espasçamento entre as palavras
-line-height: altura de cada linha, distância entre elas
+<letter-spacing> px espaçamento entre as letras
+<word-spacing> px espasçamento entre as palavras
+<line-height> altura de cada linha, distância entre elas
