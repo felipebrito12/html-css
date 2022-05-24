@@ -190,6 +190,15 @@ ______________________________________________________________
 
 <button> serve para criar um botão novo, dentro da tag <form> ela vai enviar o formulário, mas diferente do <input type="submit"> ela é programável e pode ser usada em outras áreas do código além do <form>
 
+<label> Serve para criar um texto que redireciona para outra área da página
+    <label for="nome">Digite o seu nome</label>
+      <for> indica para onde o label irar redireionar, só marcar o id que quiser. nesse caso o label iria redirecionar para o input de texto com o id "nome"
+
+    <input type="text" name="" id="nome">
+
+<fieldset> serve para criar uma área reservada no formulário, como por exemplo uma área só para dados pessoais e outro apenas para dados profissionais
+  <legend> cria uma legenda/título para o <fieldset>
+
 ______________________________________________________________
 
 <background-image>: linear-gradient(135deg , purple, yellow);
