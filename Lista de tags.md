@@ -177,6 +177,10 @@ ______________________________________________________________
       <time> seleciona a hora
       <url> aceita apenas url
       <week> seleciona a número da semana do ano
+      <hidden>  o tipo hidden serve para gravar informações que o usuário não precisa preencher ou alterar
+      <file> serve para que o usuário possa enviar um arquivo
+        <input type="file" accept="image/*"> accept serve para definifir que tipo de arquivo pode ser enviado, o * serve para dizer que qualquer tipo de arquivo que seja imagem é válido
+        <form enctype="multipart-form/data"> necessário para que o envio do arquivo ocorra com segurança e não se perca no meio do caminho 
 
 <select name=""> cria uma área de seleção de escolhas dadas pelo desenvolvedor
   cada opção é feita com a tag:
@@ -199,6 +203,14 @@ ______________________________________________________________
 <fieldset> serve para criar uma área reservada no formulário, como por exemplo uma área só para dados pessoais e outro apenas para dados profissionais
   <legend> cria uma legenda/título para o <fieldset>
 
+<input required> required serve para fazer com que o campo seja preenchido obrigatoriamente
+
+<input minlenght> serve para determinar um mínimo de preenchimento do campo
+<input maxlenght> serve para determinar um máximo de preenchimento do campo
+<input type="number" step="2"> step serve para determinar de quantos números ele deve aumentar ou diminuir no valor 
+<input min="10"> serve para determinar um valor mínimo requerido, também serve parqa datas se colocar o valor no formato internacional ano-mês-dia
+<input max="10"> serve para determinar um valor máximo permitido, também serve parqa datas se colocar o valor no formato internacional ano-mês-dia
+<input partten=""> serve para criar um requerimento no campo, como por exemplo, exigir que o campo tenha um @email 
 ______________________________________________________________
 
 <background-image>: linear-gradient(135deg , purple, yellow);
@@ -288,3 +300,12 @@ Modelo de Caixas
 <letter-spacing> px espaçamento entre as letras
 <word-spacing> px espasçamento entre as palavras
 <line-height> altura de cada linha, distância entre elas
+
+<inherit> serve para forçar uma herança
+  <box font-size="15px"> boz vai ficar com 15px
+  <h1 font-size="30px"> h1 vai ficar com 30px 
+  nesse ponto se tiver um h1 dentro de box ele vai ficar com 30px, para forçar ele a herdar o tamanho do box podemos usar o inherit
+
+  <box> <h1>{
+    font-size="inherit" 
+  } isso fará o h1 herdar a propriedade do box 
