@@ -309,3 +309,11 @@ Modelo de Caixas
   <box> <h1>{
     font-size="inherit" 
   } isso fará o h1 herdar a propriedade do box 
+
+<background-repeat> repetoção da imagem no fundo do site
+  <norepeat> não repete
+  <repeat> padrão
+  <repeat-x> repete horizontal
+  <repeat-y> repete vertical
+
+<background-size> tamanho do background
