@@ -182,9 +182,6 @@ ______________________________________________________________
         <input type="file" accept="image/*"> accept serve para definifir que tipo de arquivo pode ser enviado, o * serve para dizer que qualquer tipo de arquivo que seja imagem é válido
         <form enctype="multipart-form/data"> necessário para que o envio do arquivo ocorra com segurança e não se perca no meio do caminho 
     
-    Atributos de <input>
-      <placeholder> serve para deixar uma mensagem no campo de input, se for possível digitar nele, e remove automaticamente quando algo é inserido
-      <autofocus> quando a página é aberta o curso já abre dentro da caixa de input para poder inserir as informações 
 
 <select name=""> cria uma área de seleção de escolhas dadas pelo desenvolvedor
   cada opção é feita com a tag:
@@ -215,6 +212,11 @@ ______________________________________________________________
 <input min="10"> serve para determinar um valor mínimo requerido, também serve parqa datas se colocar o valor no formato internacional ano-mês-dia
 <input max="10"> serve para determinar um valor máximo permitido, também serve parqa datas se colocar o valor no formato internacional ano-mês-dia
 <input partten=""> serve para criar um requerimento no campo, como por exemplo, exigir que o campo tenha um @email 
+<input placeholder=""> serve para deixar uma mensagem no campo de input, se for possível digitar nele, e remove automaticamente quando algo é inserido
+<input autofocus> quando a página é aberta o curso já abre dentro da caixa de input para poder inserir as informações 
+<input autocomplete=""> 
+  off- não salva nesse bloco 
+  on-  passa a salvar as infomações para outros futuros acessos
 ______________________________________________________________
 
 <background-image>: linear-gradient(135deg , purple, yellow);
